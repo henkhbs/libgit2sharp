@@ -44,7 +44,7 @@ namespace OvoGitTest.Helpers
 
             var po = new PushOptions()
             {
-                CredentialsProvider = (_url, _user, _cred) => new UsernamePasswordCredentials { Username = "x-token-auth:" + personalAccessKey, Password = "" }
+                CustomHeaders = new[] { "Authorization: Bearer " + personalAccessKey }
 
             };
             return po;

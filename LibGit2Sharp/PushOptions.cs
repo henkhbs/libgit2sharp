@@ -66,7 +66,7 @@ namespace LibGit2Sharp
         /// cannot be overriden.
         /// </remarks>
         /// <example>
-        /// var fetchOptions - new FetchOptions() {
+        /// var pushOptions - new PushOptions() {
         ///     CustomHeaders = new String[] {"X-Request-Id: 12345"}
         /// };
         /// </example>

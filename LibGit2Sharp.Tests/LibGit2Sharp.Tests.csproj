@@ -29,8 +29,8 @@
 
   <Target Name="CopyTestAppExes" AfterTargets="ResolveProjectReferences">
     <ItemGroup>
-      <_TestAppFile Include="@(TestAppExe->'%(RootDir)%(Directory)%(Filename).exe')" />
-      <_TestAppFile Include="@(TestAppExe->'%(RootDir)%(Directory)%(Filename).pdb')" />
+      <_TestAppFile Include="@(TestAppExe-&gt;'%(RootDir)%(Directory)%(Filename).exe')" />
+      <_TestAppFile Include="@(TestAppExe-&gt;'%(RootDir)%(Directory)%(Filename).pdb')" />
     </ItemGroup>
 
     <ItemGroup>
